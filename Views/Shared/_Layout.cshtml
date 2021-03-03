@@ -19,25 +19,87 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">首页</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">隐私</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+    <div id="Home_left" style="float: left; overflow: hidden; background-color: white; width: 180px; height: 100%;">
+        <div>
+            <div>
+                订单管理
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a asp-action="" asp-controller="">
+                            预约模块
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-action="" asp-controller="">
+                            订单查询模块
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-action="" asp-controller="">
+                            账户与安全
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div>
+                基础数据管理
+            </div>
+
+            <div>
+                <ul>
+                    <li>
+                        <a asp-action="" asp-controller="">
+                            洗衣机设备管理
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-action="" asp-controller="">
+                            洗衣机地区管理
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-action="" asp-controller="">
+                            用户管理
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <a>
+                <div>
+                </div>
+            </a>
+        </div>
     </div>
+
+    <div id="Home_right" style="float: left; background-color: white;">
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2021 - WM - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2021 - WM - <a asp-area="" asp-controller="Home" asp-action="Privacy">隐私</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
